@@ -1,0 +1,103 @@
+.header {
+    background-color: #131313;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    font-size: $font-sm;
+
+
+    // Hamburger Open Styles
+    &.open {
+
+        .header__toggle {
+            >span:first-child {
+                transform: rotate(45deg);
+            }
+
+            >span:nth-child(2) {
+                opacity: 0;
+            }
+
+            >span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+
+
+    nav {
+        position: relative;
+        // background-color: $white;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+    }
+
+    &__logo {
+        color: orange;
+
+    }
+
+
+    &__links {
+
+        a {
+
+
+            color: $white;
+            transition: color 300ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                // background: linear-gradient(to right, $limeGreen, $brightCyan);
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                // color: $darkBlue;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__phone {
+        padding: auto;
+        margin: auto;
+        text-decoration: underline;
+        color: #E3B873;
+        margin-right: 0.5rem;
+
+
+
+    }
+
+
+
+    &__request-call {
+
+        background-color: #E3B873;
+        border-radius: 0.5;
+        color: #FFFFFF;
+        font-size: 11px;
+
+        padding: 10px 30px;
+
+        font-weight: 500;
+        /* margin: 10px; */
+
+    }
+}
