@@ -15,9 +15,9 @@
     }
 
     .badge {
-        @include badge(url('../../source/assets/images/design-project/badge.svg'),
-            url('../../source/assets/images/design-project/dash.svg'),
-            url('../../source/assets/images/design-project/dash.svg'));
+        @include badge(url('../../../assets/images/design-project/badge.svg'),
+            url('../../../assets/images/design-project/dash.svg'),
+            url('../../../assets/images/design-project/dash.svg'));
     }
 
     .description {
@@ -44,7 +44,7 @@
 
         &--item {
             &:first-child {
-                background: url('../../source/assets/images/design-project/mini.jpg') no-repeat;
+                background: url('../../../assets/images/design-project/mini.jpg') no-repeat;
 
                 .content {
                     max-height: 211px;
@@ -52,7 +52,7 @@
             }
 
             &:nth-child(2) {
-                background: url('../../source/assets/images/design-project/standart.jpg') no-repeat;
+                background: url('../../../assets/images/design-project/standart.jpg') no-repeat;
 
                 .content {
                     max-height: 313px;
@@ -60,7 +60,7 @@
             }
 
             &:last-child {
-                background: url('../../source/assets/images/design-project/full.jpg') no-repeat;
+                background: url('../../../assets/images/design-project/full.jpg') no-repeat;
 
                 .content {
                     max-height: 441px;

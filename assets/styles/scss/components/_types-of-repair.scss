@@ -16,9 +16,9 @@
     }
 
     .badge {
-        @include badge(url('../../source/assets/images/types-of-repair/instruments.svg'),
-            url('../../source/assets/images/types-of-repair/dash.svg'),
-            url('../../source/assets/images/types-of-repair/dash.svg'));
+        @include badge(url('../../../assets/images/types-of-repair/instruments.svg'),
+            url('../../../assets/images/types-of-repair/dash.svg'),
+            url('../../../assets/images/types-of-repair/dash.svg'));
     }
 
     .information {
@@ -34,15 +34,15 @@
 
         &--item {
             &_redecorating {
-                background: url("../../source/assets/images/types-of-repair/redecorating.png") no-repeat;
+                background: url("../../../assets/images/types-of-repair/redecorating.png") no-repeat;
             }
 
             &_overhaul {
-                background: url("../../source/assets/images/types-of-repair/overhaul.png") no-repeat;
+                background: url("../../../assets/images/types-of-repair/overhaul.png") no-repeat;
             }
 
             &_designer {
-                background: url("../../source/assets/images/types-of-repair/designer-repair.png") no-repeat;
+                background: url("../../../assets/images/types-of-repair/designer-repair.png") no-repeat;
             }
 
             height: 100%;

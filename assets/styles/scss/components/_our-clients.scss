@@ -9,9 +9,9 @@
     }
 
     .badge {
-        @include badge(url('../../source/assets/images/our-clients/hands.svg'),
-            url('../../source/assets/images/our-clients/dash.svg'),
-            url('../../source/assets/images/our-clients/dash.svg'));
+        @include badge(url('../../../assets/images/our-clients/hands.svg'),
+            url('../../../assets/images/our-clients/dash.svg'),
+            url('../../../assets/images/our-clients/dash.svg'));
     }
 
     .heading {

@@ -16,9 +16,9 @@
     }
 
     .badge {
-        @include badge(url('../../source/assets/images/our-team/team.svg'),
-            url('../../source/assets/images/our-team/dash.svg'),
-            url('../../source/assets/images/our-team/dash.svg'));
+        @include badge(url('../../../assets/images/our-team/team.svg'),
+            url('../../../assets/images/our-team/dash.svg'),
+            url('../../../assets/images/our-team/dash.svg'));
     }
 
     .description {
@@ -41,15 +41,15 @@
             min-width: 304px;
 
             &_dmitry {
-                background: url('../../source/assets/images/our-team/dmitry-tulyakov.jpg') no-repeat;
+                background: url('../../../assets/images/our-team/dmitry-tulyakov.jpg') no-repeat;
             }
 
             &_larisa {
-                background: url('../../source/assets/images/our-team/larisa-kotlyarova.jpg') no-repeat;
+                background: url('../../../assets/images/our-team/larisa-kotlyarova.jpg') no-repeat;
             }
 
             &_alexey {
-                background: url('../../source/assets/images/our-team/alexey-efimov.jpg') no-repeat;
+                background: url('../../../assets/images/our-team/alexey-efimov.jpg') no-repeat;
             }
         }
 
