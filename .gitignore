@@ -1,2 +1,11 @@
+# Пакеты
 node_modules
+
+# Ошибка
+npm-debug.log
+
+# Временные файлы
+.DS_Store
+
+# Сборка
 build

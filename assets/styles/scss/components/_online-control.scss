@@ -1,156 +1,93 @@
-.offer {
+.online-control {
+    height: 1140px;
     width: 100%;
-    height: 755px;
-    display: flex;
-    position: relative;
-    background: #131313;
 
-    .content {
-        height: 100%;
-        width: 94.3%;
-        background: url("assets/images/offer/offer-background.png");
-        background-size: cover;
-        display: flex;
-        align-items: center;
+    .head {
+        height: 36.32%;
+        background: #131313;
+        text-align: center;
+        padding-top: 80px;
+        position: relative;
+        box-sizing: border-box;
 
-        &__wrapper {
-            width: 40%;
-            height: 62%;
-            margin-left: 6%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-    }
-
-    .wrapper-btn {
-        width: 85%;
-        height: 13%;
-        display: flex;
-        justify-content: space-between;
-
-        .calculate-btn {
-            width: 48%;
-            height: 100%;
-            background: #e3b873;
-            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-            border-radius: 2px;
-            border-color: #e3b873;
-            font-family: FuturaDemiC;
-            font-size: 13px;
-            line-height: 15px;
-            text-align: center;
+        .heading {
+            font-family: Yeseva One;
+            font-size: convertPx(20);
+            line-height: convertPx(28);
+            text-transform: uppercase;
             color: #fff;
-            text-transform: uppercase;
-            cursor: pointer;
-
-            &:hover {
-                box-shadow: 0 0 20px silver;
-            }
+            margin-bottom: 10px;
         }
 
-        .submit-btn {
-            width: 48%;
-            height: 100%;
-            border: 1px solid #ffffff;
-            box-sizing: border-box;
-            border-radius: 2px;
-            background: none;
-            font-family: FuturaDemiC;
-            font-size: 13px;
-            line-height: 15px;
-            text-align: center;
-            color: #ffffff;
-            text-transform: uppercase;
-            cursor: pointer;
-
-            &:hover {
-                box-shadow: 0 0 20px silver;
-            }
+        .badge {
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
-    .heading {
-        font-family: Yeseva One;
-        font-size: 2.84rem;
-        line-height: 3.79rem;
-        text-transform: uppercase;
-        color: #fff;
+    .video {
+        transform: translateY(10%);
+        max-width: 817px;
+        max-height: 434px;
+        height: 130%;
+        margin: 0 auto;
+    }
+
+    .separator {
+        text-align: center;
+        margin-top: 250px;
     }
 
     .description {
-        width: 85%;
+        margin: 0 auto;
+        margin-top: 34px;
+        width: 52%;
         font-family: FuturaBookC;
-        font-size: 1.57rem;
-        line-height: 2.14rem;
-        color: #fff;
-    }
-
-    .instagram-wrapper {
-        height: 100%;
-        width: 5.7%;
-        background: #131313;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .instagram {
-        height: 140px;
-        text-transform: uppercase;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        &-link {
-            display: block;
-            font-family: FuturaDemiC;
-            font-size: 1rem;
-            line-height: 1.14rem;
-            text-align: center;
-            color: #e3b873;
-            transform: rotate(90deg);
-        }
-
-        .img {
-            margin-bottom: 20px;
-        }
-    }
-
-    .scroll-down {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translateY(50%);
-        width: 17.65%;
-        height: 13%;
-        background: #131313;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        font-size: convertPx(20);
+        line-height: 34px;
         text-align: center;
+        color: #363636;
+    }
+}
 
-        &__link {
-            color: #fff;
-            font-family: Yeseva One;
-            font-size: 14px;
-            line-height: 19px;
-            margin-right: 19px;
-            text-transform: uppercase;
+.form-access {
+    margin: 0 auto;
+    margin-top: 75px;
+    width: 65%;
+    text-align: center;
 
-            &:hover {
-                color: #e3b873;
-                font-style: italic;
-            }
-        }
+    .wrapper-form {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
 
-        &__img {
-            cursor: pointer;
+    &--item {
+        height: 49px;
+        width: 30%;
+        margin-right: 3%;
+        font-family: FuturaBookC;
+    }
 
-            &:hover {
-                transform: translateY(10%);
-                transition: all 0.2s ease-out;
-            }
-        }
+    &--label {
+        @include form-label(rgba(54, 54, 54, 0.5));
+    }
+
+    &--input {
+        @include form-input(#363636);
+        color: #363636;
+    }
+
+    &--button {
+        width: 26%;
+        @include btn;
+    }
+
+    &--check {
+        @extend %checkbox;
+        margin-top: 35px;
+        width: 100%;
     }
 }
