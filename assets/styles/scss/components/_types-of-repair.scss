@@ -56,7 +56,7 @@
 
     .content {
         width: 85%;
-        height: auto;
+
         @include flex($direction: column,
             $justify: space-between,
         );
@@ -102,12 +102,19 @@
             }
         }
 
-        .btn {
+        .tag {
             @include btn ($width: 70%,
                 $height: 54px,
                 $font-family: Yeseva One,
-                $font-size: convertPx(18),
+                $font-size: convertPx(20),
                 $line-height: convertPx(25));
+            transform: translateY(30px);
+            align-items: center;
+
+            .text {
+
+                transform: translate(0%, 50%)
+            }
         }
     }
 }
