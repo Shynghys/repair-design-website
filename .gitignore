@@ -8,4 +8,7 @@ npm-debug.log
 .DS_Store
 
 # Сборка
-build
+# build
+
+#vscode
+.vscode
